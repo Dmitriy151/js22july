@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+	<input id="inС" oninput="work()">
+
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+	<script>
+		function work() {
+			let txtA = document.getElementById("inA");
+			let companyName = txtA.value;
+			let txtB = document.getElementById("inB");
+			let productName = txtB.value;
+			let txtC = document.getElementById("inC");
+			let productCost = txtC.value;
+			/*let messagePart = "Распродажа в " + companyName + "!";*/
+		}
+		/*console.log(messagePart);*/
+		let tag;
+		tag = document.getElementById("out")
+		tag.innerHTML = "Задача 1910" + "<br>" + "Введите название компании" + "<br>" + /*companyName*/ + "<br>" + "Введите наименование товара" + "<br>" + /*productName*/ + "<br>" + "Введите цену товара" + "<br>" + /*productCost*/ + "<br>" + /*messagePart*/ + ".";
+
+	</script>
+</body>
+
+</html>
