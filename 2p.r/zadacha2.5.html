@@ -19,10 +19,10 @@
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
 			let result;
-			result = a + 7;
+			result = a * 1.800;
 			let teg;
 			tag = document.getElementById("out")
-			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
+			tag.innerHTML = a.toFixed(2) + " узлов это приблизительно " + result.toFixed(2) + " км/ч";//округляет до 4 знаков
 		}
 	</script>
 
