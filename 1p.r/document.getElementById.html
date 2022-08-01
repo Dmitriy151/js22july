@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Использование JavaScript метода document.getElementById()</title>
+</head>
+
+<body>
+   <button onclick="myFunc()">Нажми меня</button> <!-- добавляем атрибут событий onclick -->
+   <div id="first">Первый блок</div>
+   <div id="second">Второй блок</div>
+   <div id="third">Третий блок</div>
+   <script>
+      function myFunc() {
+         let first = document.getElementById("first"),   // выбираем элемент с идентификатором first
+            second = document.getElementById("second"), // выбираем элемент с идентификатором second
+            third = document.getElementById("third");   // выбираем элемент с идентификатором third
+
+         first.style.color = "red";    // изменяем цвет текста у элемента
+         second.style.color = "green"; // изменяем цвет текста у элемента
+         third.style.color = "blue";   // изменяем цвет текста у элемента		
+      }
+   </script>
+</body>
+
+</html>
