@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+	<input id="inA" oninput="work()">
+
+	<script>
+		let tag; function work() {
+			let txtA = document.getElementById("inA");
+			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+			let result;
+			result = (Math.sin(a * Math.PI / 180.0));
+			let teg;
+			tag = document.getElementById("out")
+			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
