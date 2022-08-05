@@ -13,21 +13,28 @@
 	</div>
 
 	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
 
 	<script>
 		let tag; function work() {
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+
+			let txtB = document.getElementById("inB");
+			let b = parseFloat(txtB.value);
+
+
 			let result;
-			if(a<0 || a === 0 ) {
-				tag.innerHTML ="Значение edge должно быть положительным";
-				return;
-			}
-			result = 6*Math.pow(a, 2);
+			if (a < 0 || a === 0) {
+				tag.innerHTML = " основания (a) треугольника должна быть положительна";
+			} else if (b < 0 || b === 0) {
+				tag.innerHTML = "Высота треугольника (b) должна быть положительна";
+			} else {
+			result = a * b / 2;
 			let teg;
 			tag = document.getElementById("out")
-			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
-			
+			tag.innerHTML = result.toFixed(2);//округляет до 2 знаков
+			}
 		}
 	</script>
 

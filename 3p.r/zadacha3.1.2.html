@@ -17,16 +17,23 @@
 	<script>
 		let tag; function work() {
 			let txtA = document.getElementById("inA");
-			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
-			let result;
-			if(a<0 || a === 0 ) {
-				tag.innerHTML ="Значение edge должно быть положительным";
+			let tag;//берет число из текста, если оно там есть
+			tag=document.getElementById("out");
+
+			let a=parseFloat(txtA.value);
+			if(a<0) {
+				tag.innerHTML ="a должно быть больше нуля";
 				return;
 			}
-			result = 6*Math.pow(a, 2);
-			let teg;
-			tag = document.getElementById("out")
-			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
+			tag.innerHTML =a+7;
+
+			let a=parseFloat(txtA.value);
+			if(a<0) {
+				tag.innerHTML ="a должно быть больше нуля";
+			}else{
+				tag.innerHTML =a+7;
+			}
+
 			
 		}
 	</script>

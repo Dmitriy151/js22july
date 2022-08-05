@@ -20,10 +20,10 @@
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
 			let result;
 			if(a<0 || a === 0 ) {
-				tag.innerHTML ="Значение edge должно быть положительным";
+				tag.innerHTML ="Значение X должно быть неотрицательным";
 				return;
 			}
-			result = 6*Math.pow(a, 2);
+			result = Math.sqrt(a);
 			let teg;
 			tag = document.getElementById("out")
 			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
