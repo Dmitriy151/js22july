@@ -19,87 +19,15 @@
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
 			let result;
-			result = a + 7;
+			result = Math.pow(a, 3);
 			let teg;
 			tag = document.getElementById("out")
-			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
+			tag.innerHTML = result.toFixed();//округляет до знаков
+			if (a < 0 || a === 0) {
+				tag.innerHTML = "Значение edge должно быть положительным";
+			}
 		}
 	</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

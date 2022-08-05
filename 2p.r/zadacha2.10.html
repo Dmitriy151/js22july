@@ -19,7 +19,7 @@
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
 			let result;
-			result = a + 7;
+			result = (Math.sin(a * Math.PI / 180));
 			let teg;
 			tag = document.getElementById("out")
 			tag.innerHTML = result.toFixed(4);//округляет до 4 знаков
