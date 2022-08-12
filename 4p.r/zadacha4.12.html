@@ -16,10 +16,13 @@
 	<input id="inB" oninput="work()">
 	<input id="inC" oninput="work()">
 
+
 	<script>
 		let tag; function work() {
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+			let tag;
+			tag = document.getElementById("out")
 
 			let txtB = document.getElementById("inB");
 			let b = parseFloat(txtB.value);
@@ -27,34 +30,25 @@
 			let txtC = document.getElementById("inC");
 			let c = parseFloat(txtC.value);
 
-			let teg;
-			tag = document.getElementById("out")
-
-
-			if (a == b) {
-				tag.innerHTML = "Треугольник является равнобедренным";
+			if (a === 0) {
+				tag.innerHTML = "Уравнение не является квадратным";
+				return;
 			}
 
-			if (a == c) {
-				tag.innerHTML = "Треугольник является равнобедренным";
+			let result;
+			result = b ** 2 - 4 * a * c;
+
+			if (result == 0) {
+				tag.innerHTML = "Уравнение имеет один корень";
 			}
 
-			if (b == c) {
-				tag.innerHTML = "Треугольник является равнобедренным";
+			if (result < 0) {
+				tag.innerHTML = "Вещественных корней уравнения нет";
 			}
 
-			if (b != c) {
-				tag.innerHTML = "Треугольник не является равнобедренным";
+			if (result > 0) {
+				tag.innerHTML = "У уравнения два вещественных корня";
 			}
-
-			if (a != c) {
-				tag.innerHTML = "Треугольник не является равнобедренным";
-			}
-
-			if (a != b) {
-				tag.innerHTML = "Треугольник не является равнобедренным";
-			}
-
 		}
 	</script>
 

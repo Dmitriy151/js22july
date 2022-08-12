@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+
+
+
+	<script>
+		let tag; function work() {
+			let txtA = document.getElementById("inA");
+			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+			let tag;
+			tag = document.getElementById("out")
+
+			let txtB = document.getElementById("inB");
+			let b = parseFloat(txtB.value);
+
+			if (a > 5 || 0 >= a) {
+				tag.innerHTML = "Фактическое количество жидкости в маленькой емкости должно быть от 0 до 5 литров включительно";
+				return;
+			}
+
+			if (b > 8 || 0 >= b) {
+				tag.innerHTML = "Фактическое количество жидкости в большой емкости должно быть от 0 до 8 литров включительно";
+				return;
+			}
+
+			/*if (a == 100 && 100 == b) {
+				tag.innerHTML = "Оба условия ложны";
+				return;
+			}
+
+			if (a < 100 && 100 < b) {
+				tag.innerHTML = "Оба условия истинны. " + a + " < 100" + " и " + "100 < " + b;
+			}
+
+			if (a < 100 && 100 > b) {
+				tag.innerHTML = "Условие на R истинно. " + a + " < 100";
+			}
+
+			if (a > 100 && 100 < b) {
+				tag.innerHTML = "Только условие на K истинно. " + "100 < " + b;
+			}*/
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
