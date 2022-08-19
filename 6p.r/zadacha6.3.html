@@ -22,17 +22,26 @@
 
 		function work() {
 
+			//let i = parseFloat(txtA.value);
+			let i = txtA.value;
+
 			let result;
 
-			let i;
-			i = parseFloat(txtA.value);
-			//result = i;
+			result = "&#34" + i;
 
+			result = result + i;
 
-			while (i <= 17) {//Сравнение счётчика и ограничения
-				result = result + i + "<br>" + "---" + "<br>";
-				i = i + 1;
-			}
+			result = result + i;
+
+			result = result + i;
+
+			result = result + i;
+
+			result = result + i;
+
+			result = result + i;
+
+			result = result + i + "&#34";
 
 			tag.innerHTML = result;
 		}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+	<input id="inA1" oninput="work1()">
+	<input id="ina2" oninput="work2()">
+	<input id="ina3" oninput="work3()">
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let tag;
+		tag = document.getElementById("out")
+
+		function work1() {
+			let result;
+			result = "Предисловие <br>";
+			result = result + "Глава 1<br>";
+			result = result + "Глава 2<br>";
+			result = result + "Глава 3<br>";
+			result = result + "Глава 4<br>";
+			result = result + "Послесловие <br>";
+			tag.innerHTML = result;
+
+		}
+
+		function work2() {
+			let result;
+			result = "Предисловие <br>";
+
+			let i;
+			i = 3;
+
+			result = result + "Глава" + i + "<br>";
+			i = i + 1;
+			result = result + "Глава" + i + "<br>";
+			i = i + 1;
+			result = result + "Глава" + i + "<br>";
+			i = i + 1;
+			result = result + "Глава" + i + "<br>";
+			i = i + 1;
+			result = result + "Послесловие <br>";
+			tag.innerHTML = result;
+		}
+
+		function work3() {
+			let result;
+			result = "Предисловие <br>";
+
+			let i;
+			i = 4;
+
+			while (i <= 7) {//Сравнение счётчика и ограничения
+				result = result + "Глава" + i + "<br>";
+				i = i + 1;
+			}
+
+			result = result + "Послесловие <br>";
+			tag.innerHTML = result;
+		}
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

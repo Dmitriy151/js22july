@@ -12,27 +12,44 @@
 	<div id="out" style="font-family: monospace; white-space: pre;">
 	</div>
 
+
 	<input id="inA" oninput="work()">
 
 	<script>
 		let txtA = document.getElementById("inA");
-		let a = parseFloat(txtA.value);
 		let tag;
 		tag = document.getElementById("out")
 
-	function work(){
-		let result;
-		result=a;
-		let i;
-		i=1;
+		function work() {
 
-		while(i<=17) {//Сравнение счётчика и ограничения
-			result= result + i  + "<br>";
-		i=i+1;
+			let i = parseFloat(txtA.value);
+
+			let result;
+
+			result = i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+			result = result + i + "<br>" + "---" + "<br>";
+			i = i + 1;
+
+			tag.innerHTML = result;
 		}
-		tag.innerHTML=result;
 
-	}
 	</script>
 
 
