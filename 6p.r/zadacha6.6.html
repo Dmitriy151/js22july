@@ -22,23 +22,21 @@
 
 		function work() {
 
-			//let i = parseFloat(txtA.value);
-			let i;
-			i = 1;
+			let i = parseFloat(txtA.value);
+			
 
 			let result;
 			let d;
-			d= txtA.value;
+			d=(i+3)+27;
 
 
-			result = "&#34";
+			result = "";
 
-			while (i <= 7) {//Сравнение счётчика и ограничения
-				result = result + d;
-				i = i + 1;
+			while (i <= d) {//Сравнение счётчика и ограничения
+				result = result + i+" ";
+				i = i + 3;
 			}
 
-			result = result + "&#34";
 
 			tag.innerHTML = result;
 		}
