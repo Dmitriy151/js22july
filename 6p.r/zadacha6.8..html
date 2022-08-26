@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work1()">
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let tag;
+		tag = document.getElementById("out")
+
+		function work() {
+
+			let i = parseFloat(txtA.value);
+
+
+			let result;
+			let d;
+			d = "";
+
+
+			result = "";
+
+			while (d <= i) {//Сравнение счётчика и ограничения
+				result = result + 1 + " ";
+				i = i + 1;
+			}
+			tag.innerHTML = result;
+		}
+
+
+		let txtB = document.getElementById("inB")
+		function work1() {
+			let b = parseFloat(txtB.value);
+			let result;
+			result = "";
+			let i;
+			i = 0;
+
+			if (b < 0) {
+				result = "Вводимое число должно быть неотрицательно";
+			}
+
+			if (i < b) {
+				result = "*";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "**";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "***";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "****";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*****";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "******";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*******";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "********";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*********";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "**********";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "***********";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "************";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*************";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "**************";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "***************";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "****************";
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*****************";//17
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "******************";//18
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "*******************";//19
+				i = i + 1;
+			}
+			if (i < b) {
+				result = "********************";//20
+				i = i + 1;
+			}
+
+			tag.innerHTML = result;
+
+		}
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
