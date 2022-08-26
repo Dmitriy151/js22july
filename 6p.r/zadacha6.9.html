@@ -14,73 +14,71 @@
 
 
 	<input id="inA" oninput="work()">
-	<input id="inB" oninput="work1()">
+	
 
 	<script>
 		let txtA = document.getElementById("inA");
-      let txtB = document.getElementById("inB")
+     
 		let tag;
 		tag = document.getElementById("out")
 
 		function work() {
 
 			let a = parseFloat(txtA.value);
+			
+			
 
 
 			let result;
 			result = "";
 			
 			
-				result = result + a + " ";
+				result =" "+a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 		
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result =a + result  + " ";
 				a = a - 4;
 			
 			
-				result = result + a + " ";
+				result = a + result  + " ";
 				a = a - 4;
 
 
-            result = result + a + " "+"<br>";
-				a = a -4;
+                result = a + result  + " ";
+				a = a - 4;
 
-			tag.innerHTML = result;
-		}
+			
 
-
-		
-		function work1() {
-			let i = parseFloat(txtB.value);
+			let i = parseFloat(txtA.value);
 			let result1;
 			result1 = "";
 			
@@ -125,11 +123,11 @@
 				i = i + 3;
 
 
-            result1 = result1 + i + " "+"<br>";
+                result1 = result1 + i + " "+"<br>";
 				i = i + 3;
 			
 				
-			tag.innerHTML = result1;
+			tag.innerHTML = result1+"<br>"+result;
 			console.log
 		}
 

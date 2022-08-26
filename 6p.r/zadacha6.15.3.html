@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" oninput="work1()">
+	<input id="inB" oninput="work1()">
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let tag;
+		tag = document.getElementById("out")
+
+
+		let txtB = document.getElementById("inB")
+		function work1() {
+			let i = parseFloat(txtA.value);
+			let b = parseFloat(txtB.value);
+			
+			let result;
+			result = "";
+
+			if (i > b) {
+				tag.innerHTML = "Значение A должно быть не больше значения B";
+				
+			}else{
+				if (i <= b) {
+				result = result + i + "; ";
+				i = i + 1;
+			}
+			if (i <= b) {
+				result = result + i + "; ";
+				i = i + 1;
+			}
+			if (i <= b) {
+				result = result + i + "; ";
+				i = i + 1;
+			}
+			if (i <= b) {
+				result = result + i + "; ";
+				i = i + 1;
+			}
+			if (i <= b) {
+				result = result + i + " ";
+				i = i + 1;
+			}
+			tag.innerHTML = result;
+			console.log
+			}
+
+			
+		
+			
+		}
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
