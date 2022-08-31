@@ -26,41 +26,37 @@
 		function work1() {
 			let i = parseFloat(txtA.value);
 			let b = parseFloat(txtB.value);
-			
+
 			let result;
 			result = "";
 
 			if (i > b) {
 				tag.innerHTML = "Значение A должно быть не больше значения B";
-				
-			}else{
-				if (i <= b) {
-				result = result + i + "; ";
-				i = i + 1;
-			}
-			if (i <= b) {
-				result = result + i + "; ";
-				i = i + 1;
-			}
-			if (i <= b) {
-				result = result + i + "; ";
-				i = i + 1;
-			}
-			if (i <= b) {
-				result = result + i + "; ";
-				i = i + 1;
-			}
-			if (i <= b) {
-				result = result + i + " ";
-				i = i + 1;
-			}
-			tag.innerHTML = result;
-			console.log
-			}
 
-			
-		
-			
+			} else {
+				if (i <= b) {
+					result = result + i + "; ";
+					i = i + 1;
+				}
+				if (i <= b) {
+					result = result + i + "; ";
+					i = i + 1;
+				}
+				if (i <= b) {
+					result = result + i + "; ";
+					i = i + 1;
+				}
+				if (i <= b) {
+					result = result + i + "; ";
+					i = i + 1;
+				}
+				if (i <= b) {
+					result = result + i + " ";
+					i = i + 1;
+				}
+				tag.innerHTML = result;
+				console.log
+			}
 		}
 
 

@@ -22,18 +22,18 @@
 		tag = document.getElementById("out")
 
 
-		let txtB = document.getElementById("inB")
+		let txtB = document.getElementById("inB");
 		function work1() {
 			let i = parseFloat(txtA.value);
 			let b = parseFloat(txtB.value);
-			
+
 			let result;
 			result = "";
 
 			if (i > b) {
 				result = "Значение A должно быть не больше значения B";
 			}
-			
+
 			if (i <= b) {
 				result = result + i + "; ";
 				i = i + 1;
@@ -55,7 +55,7 @@
 				i = i + 1;
 			}
 
-		
+
 			tag.innerHTML = result;
 			console.log
 		}
