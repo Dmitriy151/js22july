@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let txtB = document.getElementById("inB");
+
+		let tag;
+		tag = document.getElementById("out")
+
+		function work() {
+
+			let a = parseFloat(txtA.value);
+			let a1 = parseFloat(txtA.value);
+			let b = parseFloat(txtB.value);
+			let b1 = parseFloat(txtB.value);
+
+
+			let result;
+			result = "";
+
+			let result1;
+			result1 = "";
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			result1 = b1 + result1 + " <br>";
+			b1 = b1 - 1;
+
+			/*while (a <= b) {
+				result = " " + result + a + " ";
+				a = a + 1;
+			}*/
+
+			result = " " + result + a + "<br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+			result = " " + result + a + " <br>";
+			a = a + 1;
+
+
+
+			tag.innerHTML = result + result1;
+
+
+		}
+
+	</script>
+
+
+</body>
+
+</html>

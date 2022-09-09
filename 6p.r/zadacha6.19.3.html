@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let txtB = document.getElementById("inB");
+
+		let tag;
+		tag = document.getElementById("out")
+
+		function work() {
+
+			let a = parseFloat(txtA.value);
+			let a1 = parseFloat(txtA.value);
+			let a2 = parseFloat(txtA.value);
+			let a3 = parseFloat(txtA.value);
+			let b = parseFloat(txtB.value);
+			let b1 = parseFloat(txtB.value);
+			let b2 = parseFloat(txtB.value);
+			let b3 = parseFloat(txtB.value);
+
+			let c = a - b;
+
+
+			let result;
+			let result1;
+			let result2;
+			let result3;
+			result = "";
+			result1 = "";
+			result2 = "";
+			result3 = "";
+			//let i = 0;
+			//let k = 0;
+
+			//a<b
+
+			if (c < 0) {
+				console.log(c);
+				let i = a;
+				let k = a1;
+				while (i <= b) {
+					result = " " + result + i + " " + "<br>"
+					i = i + 1;
+				}
+				while (k <= b1) {
+					result1 = "<br>" + k + " " + result1 + " " + "<br>";
+					k = k + 1;
+				}
+			}
+
+
+
+			//a>b
+			if (c > 0) {
+				console.log(c);
+				let j = b2;
+				let t = b3;
+				while (j <= a2) {
+					result = " " + result + j + " " + "<br>";
+					j = j + 1;
+				}
+				while (t <= a3) {
+					result1 = "<br>" + t + " " + result1 + " ";
+					t = t + 1;
+				}
+			}
+
+
+			tag.innerHTML = result + " " + result1 + "<br>" + "Всего строк " + Math.abs(c);
+			//tag.innerHTML = result2 + " " + result3;
+
+
+
+			console.log(result);
+			console.log(result1);
+
+
+
+		}
+
+
+
+
+
+	</script>
+
+
+</body>
+
+</html>

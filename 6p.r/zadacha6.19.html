@@ -35,35 +35,26 @@
 			let result;
 			result = "";
 
-			if (a < b) {
-				result = "По возрастанию" + "<br>";
-			}
-
-			if (a > b) {
-				result = "По убыванию" + "<br>";
-			}
-
-			if (a == b) {
-				tag.innerHTML = "По убыванию" + "<br>" + a;
-				return;
-			}
-
-			while (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
+			let result1;
 			result1 = "";
 
-			while (b1 <= a1) {
-				result1 = b1 + " " + result1 + " ";
-				b1 = b1 + 1;
-			}
+
+
+			/*while (a <= b) {
+				result = " " + result + a + " ";
+				a = a + 1;
+			}*/
+
+			/*while (b1 => a1) {
+				result1 = " " + b1 + " " + result1;
+				b1 = b1 - 1;
+				console.log(result1);
+				if (result1 = b1) break;
+			}*/
 
 			tag.innerHTML = result + "<br>" + result1;
 
 		}
-
 
 	</script>
 
