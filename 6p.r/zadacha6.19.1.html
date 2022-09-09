@@ -155,7 +155,55 @@
 				b1 = b1 + 1;
 			}
 
-			tag.innerHTML = result + "<br>" + result1;
+			/*tag.innerHTML = result + "<br>" + result1;
+			result = " ";
+			result = " " + result + a + " " + b1 + result;//" "+" "+3+" "+11+" "
+			//result ="  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 "+4+" "+10+"  3 11 "
+			//result ="  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 4 10  3 11 "+5+" "+9+"  3 11 4 10  3 11 "
+			//result ="  3 11 4 10  3 11 5 9  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;*/
+			
+			
+			
+			/*result = " ";
+			result =  a + " " + b1;//  3 + " " + 11
+			//result =3 11
+			a = a + 1;
+			b1 = b1 - 1;
+			result = a + " " + b1;// 4 + " " + 10
+			//result =4 10
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 4 10  3 11 "+5+" "+9+"  3 11 4 10  3 11 "
+			//result ="  3 11 4 10  3 11 5 9  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;*/
+			
+			
+			result = " ";
+			result =  a + " " + b1+result+"<br>";//a + " " + b1+" "+"<br>"
+			//result =3 11"<br>"
+			a = a + 1;
+			b1 = b1 - 1;
+			result = a + " " + b1+result+"<br>";//4 + " " + 10+3 11+"<br>"
+			//result =4 103 11"<br>" 
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//5 + " " + 9+4 104  103 11+"<br>" 
+			
+			//result =4 104  103 11
+			a = a + 1;
+			b1 = b1 - 1;
+			
+			tag.innerHTML = result;
+			result = a + " " + b1;//3 + " " + 11
 
 
 		}
