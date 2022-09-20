@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+
+	<script>
+		let txtA = document.getElementById("inA");
+		let txtB = document.getElementById("inB");
+		let tag;
+		tag = document.getElementById("out")
+
+		function work() {
+		let a = parseFloat(txtA.value);
+		let b = parseFloat(txtB.value);
+		let result;
+		let result1;
+		result = "";
+		result1 = "";
+		if(a<0){
+		result = "Значение R должно быть неотрицательно";
+		tag.innerHTML = result;
+		return;}
+		if(b<0){
+		result = "Значение T должно быть неотрицательно";
+		tag.innerHTML = result;
+		return;
+		}
+		
+		let i = 0;
+		
+
+			while (i < a) {//Сравнение счётчика и ограничения
+				result = result + "#";
+				i = i + 1;
+			}
+			i=0;
+			while (i < b) {//Сравнение счётчика и ограничения
+				result1 = result1 + "#";
+				i = i + 1;
+			}
+
+			//result = result ;
+
+			tag.innerHTML =result+"<br>"+ result1;
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

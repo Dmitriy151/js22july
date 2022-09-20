@@ -30,6 +30,7 @@
 			let a1 = parseFloat(txtA.value);
 			let b = parseFloat(txtB.value);
 			let b1 = parseFloat(txtB.value);
+			let c = a - b;
 
 
 			let result;
@@ -38,124 +39,195 @@
 			let result1;
 			result1 = "";
 
+			//a =3
+			//b =11
 
-			/*while (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}*/
+			if (c < 0) {
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result = 3+" " +11+ "<br>" + " "
+					a = a + 1;//a =4
+					b = b - 1;//b =10
+				}//result =3 11"<br>"
 
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =4+" " +10+ "<br>" + 3 11
+					a = a + 1;//a =5
+					b = b - 1;//b =9
+				}//result =4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =5+" " +9+ "<br>" + 4 10 3 11
+					a = a + 1;//a =6
+					b = b - 1;//a =8
+				}//result =5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =6+" " +8+ "<br>" + 5 9 4 10 3 11
+					a = a + 1;//a =7
+					b = b - 1;//a =7
+				}//result =6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =7+" " +7+ "<br>" + 6 8 5 9 4 10 3 11
+					a = a + 1;//a =8
+					b = b - 1;//b =6
+				}//result =7 7 6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =8+" " +6+ "<br>" + 7 7 6 8 5 9 4 10 3 11
+
+					a = a + 1;//a =9
+					b = b - 1;//b =5
+				}//result =8 6 7 7 6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =9+" " +5+ "<br>" + 8 6 7 7 6 8 5 9 4 10 3 11
+					a = a + 1;//a =10
+					b = b - 1;//b =4
+				}//result =9 5 8 6 7 7 6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =10+" " +4+ "<br>" +9 5 8 6 7 7 6 8 5 9 4 10 3 11
+					a = a + 1;//a=11
+					b = b - 1;//b=3
+				}//result =10 4 9 5 8 6 7 7 6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =11+" " +3+ "<br>" +10 4 9 5 8 6 7 7 6 8 5 9 4 10 3 11
+					a = a + 1;//a=12
+					b = b - 1;//b=2
+				}//result =11 3 10 4 9 5 8 6 7 7 6 8 5 9 4 10 3 11
+
+				if (a1 < b1) {
+					result = a + " " + b + "<br>" + result;//result =12+" " +2+ "<br>" +11 3 10 4 9 5 8 6 7 7 6 8 5 9 4 10 3 11
+					a = a + 1;//a=12
+					b = b - 1;;//b=2
+				}//result =12 2 11 3 10 4 9 5 8 6 7 7 6 8 5 9 4 10 3 11
 			}
 
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
+			//a =11
+			//b =3
+
+			if (c > 0) {
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 11+" " +3+ "<br>" + " "
+					a = a - 1;//a =10
+					b = b + 1;//b =4
+				}//result =11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 10+" " +4+ "<br>" + 11 3
+					a = a - 1;//a =9
+					b = b + 1;//b =5
+				}//result =10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 9+" " +5+ "<br>" + 10 4 11 3
+					a = a - 1;//a =8
+					b = b + 1;//b =6
+				}//result =9 5 10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 8+" " +6+ "<br>" + 10 4 11 3
+					a = a - 1;//a =7
+					b = b + 1;//b =7
+				}//result =9 5 10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 8+" " +6+ "<br>" + 10 4 11 3
+					a = a - 1;//a =6
+					b = b + 1;//b =8
+				}//result =9 5 10 4 11 3
+
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 11+" " +3+ "<br>" + " "
+					a = a - 1;//a =5
+					b = b + 1;//b =9
+				}//result =11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 10+" " +4+ "<br>" + 11 3
+					a = a - 1;//a =4
+					b = b + 1;//b =10
+				}//result =10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 9+" " +5+ "<br>" + 10 4 11 3
+					a = a - 1;//a =3
+					b = b + 1;//b =11
+				}//result =9 5 10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 8+" " +6+ "<br>" + 10 4 11 3
+					a = a - 1;//a =2
+					b = b + 1;//b =12
+				}//result =9 5 10 4 11 3
+
+				if (b1 < a1) {
+					result = a + " " + b + "<br>" + result;//result = 8+" " +6+ "<br>" + 10 4 11 3
+					a = a - 1;//a =1
+					b = b + 1;//b =13
+				}//result =9 5 10 4 11 3
 			}
 
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
+			if (c == 0) {
+				result = a + " " + b;
 			}
 
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
-
-			if (a <= b) {
-				result = " " + result + a + " ";
-				a = a + 1;
-			}
+			tag.innerHTML = result + "<br>" + "Всего строк " + Math.abs(c + 1);
 
 
-			/*while (b <= a) {
-				result1 = " " + result1 + b + " ";
-				b = b - 1;
-			}*/
 
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
-
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
+			/*tag.innerHTML = result + "<br>" + result1;
+			result = " ";
+			result = " " + result + a + " " + b1 + result;//" "+" "+3+" "+11+" "
+			//result ="  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 "+4+" "+10+"  3 11 "
+			//result ="  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 4 10  3 11 "+5+" "+9+"  3 11 4 10  3 11 "
+			//result ="  3 11 4 10  3 11 5 9  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			
+			
+			
+			result = " ";
+			result =  a + " " + b1;//  3 + " " + 11
+			//result =3 11
+			a = a + 1;
+			b1 = b1 - 1;
+			result = a + " " + b1;// 4 + " " + 10
+			//result =4 10
+			a = a + 1;
+			b1 = b1 - 1;
+			result = " " + result + a + " " + b1 + result;//" "+"  3 11 4 10  3 11 "+5+" "+9+"  3 11 4 10  3 11 "
+			//result ="  3 11 4 10  3 11 5 9  3 11 4 10  3 11 "
+			a = a + 1;
+			b1 = b1 - 1;
+			
+			
+			result = " ";
+			result =  a + " " + b1+result+"<br>";//a + " " + b1+" "+"<br>"
+			//result =3 11 "<br>"
+			a = a + 1;
+			b1 = b1 - 1;
+			result = a + " " + b1+result+"<br>";//4 + " " + 10+3 11+"<br>"
+			//result =4 103 11"<br>" 
+			a = a + 1;
+			b1 = b1 - 1;
+			result = a + " " + b1+result+"<br>";//5 + " "+9+4 103 11+"<br>"
+			
+			//result =5 94 103 11"<br>"
+			a = a + 1;
+			b1 = b1 - 1;*/
 
 
-			if (b1 <= a1) {
-				result1 = " " + b1 + result1 + " ";
-				b1 = b1 + 1;
-			}
 
-			tag.innerHTML = result + "<br>" + result1;
 
 
 		}
