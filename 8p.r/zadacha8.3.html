@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inData"/>
+	<input id="inA"/>
+	<input type="button"
+	onclick="work()"
+	value="работай"/>
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagData = document.getElementById("inData");
+		let tagA= document.getElementById("inA");
+		
+
+		function work() {
+		let data = tagData.value;
+		let a = parseFloat(tagA.value);
+		if(data== ""){
+		divOut.innerHTML = "Исходная строка пуста";
+		return;}
+		
+		let arr=data.split(" ");//символ пргобела обозначает как будут разделены элементы из data
+
+		if(0 <=a&&a<=arr.length){
+		
+		let result="Элемент на индексе "+a+" содержит значение "+arr[a]+"<br>";
+		
+		console.log(result);
+		(arr[a-1]==undefined)? result+="Предыдущий элемент не существует"+"<br>":result+="Значение предыдущего элемента "+arr[a-1]+"<br>";
+		(arr[a+1]==undefined)? result+="Следующий элемент не существует"+"<br>":result+="Значение следующего элемента "+arr[a+1]+"<br>";
+		
+		divOut.innerHTML= result;
+
+		}else{
+		divOut.innerHTML = "Число A должно быть в интервале [0, размер массива)";
+		}
+
+		/*let result1="Значение предыдущего элемента "+arr[a-1]+"<br>";
+		result1+="Значение следующего элемента "+arr[a+1]+"<br>";
+		divOut.innerHTML = result1;
+
+		/*if(0 <=[a-1]&&[a-1]<=arr.length){
+			let result1="Значение предыдущего элемента "+arr[a-1]+"<br>";
+			divOut.innerHTML = result1;
+		}else{
+			divOut.innerHTML ="Следующий элемент не существует"+"<br>";
+		}
+		if(0 <=[a+1]&&[a+1]<=arr.length){
+			let result2="Значение следующего элемента "+arr[a+1]+"<br>";
+			divOut.innerHTML = result2;
+		}*/
+
+		}
+		
+		
+		
+		
+
+	</script>
+
+</body>
+
+</html>

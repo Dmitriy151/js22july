@@ -35,26 +35,30 @@
 		let arr=data.split(",");
 		let result=" ";
 		
-		
 		result+="Значение элемента на индексе 0 это "+arr[0]+"<br>";
-		//result+="Значение элемента на индексе 2 это "+arr[2]+"<br>";
-		
 		
 		if(arr.length>=3){
 		result+="Значение элемента на индексе 2 это "+arr[2]+"<br>";
 		}else{
 		result+="Нет элемента на индексе "+2+"<br>";
 		}
+
+		if(arr.length>=4){
 		result+="Значение элемента на индексе 3 это "+arr[3]+"<br>";
+		}else{
+		result+="Нет элемента на индексе "+3+"<br>";
+		}
+
+		
+		if(arr.length>=6){
 		result+="Значение элемента на индексе 5 это "+arr[5]+"<br>";
+		}else{
+		result+="Нет элемента на индексе "+5+"<br>";
+		}
+		
 		divOut.innerHTML = result;
 		}
 		
-		
-		
-		
-		
-
 	</script>
 
 </body>
