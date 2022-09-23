@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inData"/>
+	<!--<input id="inA"/>-->
+	<input type="button"
+	onclick="work()"
+	value="работай"/>
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagData = document.getElementById("inData");
+		
+		
+
+		function work() {
+		let data = tagData.value;
+		
+		if(data== ""){
+		divOut.innerHTML = "Исходная строка пуста";
+		return;}
+		
+		let arr=data.split(" ");
+		let result=" ";
+		
+		result+="Индекс последнего элемента "+(arr.length-1)+"<br>";
+		
+		
+		result+="Значение последнего элемента "+arr[arr.length-1]+"<br>";
+		
+		result+="Вместо "+ arr[0]+ " пишем "+arr[arr.length-1]+"<br>";
+
+		/*
+		if(0<arr.length){
+			result+=arr[0];
+		}
+		if(1<arr.length){
+			result+=arr[1];
+		}
+		if(2<arr.length){
+			result+=arr[2];
+		}
+		if(3<arr.length){
+			result+=arr3];
+		}
+		*/
+		/*
+		if(i<arr.length){
+			result+=arr[i];
+			i=i+1;
+		}
+		if(i<arr.length){
+			result+=arr[i];
+			i=i+1;
+		}
+		if(i<arr.length){
+			result+=arr[i];
+			i=i+1;
+		}
+		if(i<arr.length){
+			result+=arr[i];
+			i=i+1;
+		}
+		*/
+		
+		/*let i=0;
+		while(i<arr.length){
+			result+=arr[i]+" ";
+			i=i+1;
+		}*/
+		result=result+"Элементы массива: ";
+		
+
+		let lost=arr[arr.length-1];
+		
+		arr[0]=lost;
+
+		for(let i=0; i<arr.length; i++){
+			result+=arr[i];
+		}
+
+
+
+		
+
+		
+		
+
+		/*if(arr.length>=4){
+		result+="Значение элемента на индексе 3 это "+arr[3]+"<br>";
+		}else{
+		result+="Нет элемента на индексе "+3+"<br>";
+		}
+
+		
+		if(arr.length>=6){
+		result+="Значение элемента на индексе 5 это "+arr[5]+"<br>";
+		}else{
+		result+="Нет элемента на индексе "+5+"<br>";
+		}*/
+		
+		divOut.innerHTML= result;
+		}
+		
+	</script>
+
+</body>
+
+</html>

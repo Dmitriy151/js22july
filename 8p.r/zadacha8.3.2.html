@@ -32,32 +32,32 @@
 		divOut.innerHTML = "Исходная строка пуста";
 		return;}
 		
-		let arr=data.split(" ");//символ пргобела обозначает как будут разделены элементы из data
+		let arr=data.split(" ");//символ пргобела обозначает как будут разделены элементы из data        
+		let result=" ";
 
 		if(0 <=a&&a<arr.length){
 		console.log(arr.length);	
-		let result="Элемент на индексе "+a+" содержит значение "+arr[a]+"<br>";
-		
-		divOut.innerHTML = result;
+		result+="Элемент на индексе "+a+" содержит значение "+arr[a]+"<br>";
 
 		}else{
-		divOut.innerHTML = "Число A должно быть в интервале [0, размер массива)";
+		result+= "Число A должно быть в интервале [0, размер массива)";
 		}
-		if(0 <=arr[a-1]<arr.length){
+		if(0 <=(a-1)&&(a-1)<arr.length){
 			
-			result+="Значение предыдущего элемента "+arr[a-1]+"<br>";
-			divOut.innerHTML = result;
-			
+		result+="Значение предыдущего элемента "+arr[a-1]+"<br>";
+						
 		}else{
-         divOut.innerHTML ="Предыдущий элемент не существует"+"<br>";
+        result+="Предыдущий элемент не существует"+"<br>";
 		}
-		if(0 <=arr[a+1]<arr.length){
-			result+="Значение следующего элемента "+arr[a+1]+"<br>";
-			divOut.innerHTML = result;
-			
+
+		if(0 <=(a+1)&&(a+1)<arr.length){
+		result+="Значение следующего элемента "+arr[a+1]+"<br>";
+				
 		}else{
-			divOut.innerHTML ="Следующий элемент не существует"+"<br>";
+		result+="Следующий элемент не существует"+"<br>";
 		}
+		
+		divOut.innerHTML = result;
 		}
 		
 		
