@@ -26,17 +26,35 @@
 		function work() {
 			let data = tagData.value;
 
-			let arr = data.split(";");
+			let arr = data.split(",");
 			let result = " ";
 
 			if (data == "") {
-				divOut.innerHTML = "Исходная строка пуста";
 				return;
 			}
 
-			result += "Длина массива:  " + (arr.length) + "," + " индекс: " + ((Math.round(arr.length / 2)) - 1)
-			 + "," + "Значение этого элемента " + arr[(Math.round(arr.length / 2)) - 1];
-			console.log(arr.length);
+
+
+			/*result += "Длина массива:  " + (arr.length) + "," + " индекс: " + ((Math.round(arr.length / 2)) - 1) + "," + "Значение этого элемента " + arr[(Math.round(arr.length / 2)) - 1];
+			console.log(arr.length);*/
+			
+
+			for (let i = (arr.length-1); -1 <i; i--) {
+				result += " " + arr[i];
+			}
+
+			//let i = 0;
+
+			/*while (i <= (arr.length - 1)) {
+
+				result = arr[i] + " " + result;
+				i++;
+				console.log(result);
+
+			}*/
+
+
+
 
 			divOut.innerHTML = result;
 

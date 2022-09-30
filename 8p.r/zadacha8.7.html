@@ -79,8 +79,9 @@
 			/*result += "Длина массива:  " + (arr.length) + "," + " индекс: " + ((Math.round(arr.length / 2)) - 1) + "," + "Значение этого элемента " + arr[(Math.round(arr.length / 2)) - 1];
 			console.log(arr.length);*/
 
-			for (let i = 1; i < arr.length; i++) {
-				result += "Глава " + i + " " + arr[i] + "<br>";
+			for (let i = 0; i < arr.length; i++) {
+				
+				result += "Глава " + (i+1) + " " + arr[i] + "<br>";
 			}
 
 			divOut.innerHTML = result;

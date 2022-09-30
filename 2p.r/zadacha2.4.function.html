@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+	<div id="out1"></div>
+	<div id="out2"></div>
+	<div id="out3"></div>
+	<div id="out4"></div>
+	<input type="button" onclick="work()">
+
+	<!--<input id="inA" oninput="work()">-->
+
+	<script>
+		//реализация фунции calc
+		function calc(a){
+			let result;
+			result=a*5/18;
+			//return остановил и вернул результат
+			return result;
+		}
+        //конец реализации
+
+		function work(){
+			let txt1=document.getElementById("out1")
+			let result1;
+
+			//вызов функции calc
+			result1=calc(60)
+			txt1.innerHTML="60,00 км/ч это"+result1 + "м/с";
+		
+
+		
+			let txt2=document.getElementById("out2")
+			let result2;
+
+			//вызов функции calc
+			result2=calc(200)
+			txt2.innerHTML="200,00 км/ч это"+result2 + "м/с";
+		}
+		/*let tag; function work() {
+			let txtA = document.getElementById("inA");
+			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+			let result;
+			result = a * 5 / 18;
+			let teg;
+			tag = document.getElementById("out")
+			tag.innerHTML = a.toFixed(2) + " км/ч это " + result.toFixed(2) + " м/с";//округляет до 4 знаков
+		}*/
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
