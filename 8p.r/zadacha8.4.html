@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inData" />
+
+	<input type="button" onclick="work()" value="работай" />
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagData = document.getElementById("inData");
+
+
+
+		function work() {
+			let data = tagData.value;
+
+			let arr = data.split("#");
+			let result = " ";
+
+			if (data == "") {
+				divOut.innerHTML = "Исходная строка пуста";
+				return;
+			}
+
+			if (arr.length < 3) {
+
+				divOut.innerHTML = "Массив слишком маленький";
+				return;
+			}
+
+			result += "Индекс третьего элемента с конца " + (arr.length - 3) + "<br>";
+			console.log(arr.length);
+
+			result += "Значение этого элемента " + arr[arr.length - 3];
+
+			divOut.innerHTML = result;
+
+		}
+
+	</script>
+
+</body>
+
+</html>

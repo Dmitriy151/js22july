@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inData" />
+
+	<input type="button" onclick="work()" value="работай" />
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagData = document.getElementById("inData");
+
+
+
+		function work() {
+			let data = tagData.value;
+
+			let arr = data.split(",");
+			let result = " ";
+
+			if (data == "") {
+				return;
+			}
+
+
+
+			/*result += "Длина массива:  " + (arr.length) + "," + " индекс: " + ((Math.round(arr.length / 2)) - 1) + "," + "Значение этого элемента " + arr[(Math.round(arr.length / 2)) - 1];
+			console.log(arr.length);*/
+
+			/*for (let i = a; 0 < a; i--) {
+				result += i + " " + arr[i];
+			}*/
+
+			let i = 0;
+
+			while (i <= (arr.length - 1)) {
+
+				result = arr[i] + " " + result;
+				i++;
+				console.log(result);
+
+			}
+
+
+
+
+			divOut.innerHTML = result;
+
+		}
+
+	</script>
+
+</body>
+
+</html>
