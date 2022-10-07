@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+	<div id="out1"></div>
+	<div id="out2"></div>
+	<div id="out3"></div>
+	<div id="out4"></div>
+
+	<input id="inA">
+	<input id="inB">
+	<input type="button" onclick="work()" value="поехали">
+
+	<script>
+		function calc(height, width) {
+
+			let area = height * width;
+			//return остановил и вернул результат
+			return area;
+		}
+		function work() {
+			let temp = document.getElementById("inA");
+
+			let height = parseFloat(temp.value);//берет число из текста, если оно там есть
+
+			temp = document.getElementById("inB");//значение inB вытесняет из переменной temp предыдущее значение inA
+			let width = parseFloat(temp.value);
+
+			area = calc(height, width);
+
+			let tag;
+			tag = document.getElementById("out")
+			tag.innerHTML = "Задача 1976" + "<br>" + "Введите высоту прямоугольника" + "<br>" + height + "<br>" + "Введите ширину прямоугольника" + "<br>" + width + "<br>" + "Площадь прямоугольника со сторонами " + height + " и " + width + " равна " + area;
+
+			area = calc(11, 19);
+
+			let tag1;
+			tag1 = document.getElementById("out1")
+			tag1.innerHTML = "Задача 1976" + "<br>" + "Введите высоту прямоугольника" + "<br>" + height + "<br>" + "Введите ширину прямоугольника" + "<br>" + width + "<br>" + "Площадь прямоугольника со сторонами " + height + " и " + width + " равна " + area;
+		}
+	</script>
+</body>
+
+</html>
