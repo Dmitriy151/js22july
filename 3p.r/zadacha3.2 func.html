@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+	<input id="inA" oninput="work()">
+	<input id="inB" oninput="work()">
+
+	<script>
+		function calc (edge,height){
+			if (edge>0&&height>0){
+				let result=edge * height / 2;
+				return result;
+			}
+			if (edge<0){
+				let e=Error("Значение edge должно быть положительным");
+				throw e;
+			}
+			if (height<0){
+				let d=Error("Значение height должно быть положительным");
+				throw d;
+			}
+			if(edge==undefined||edge!==edge){
+				let c=Error("Значение edge должно быть числом");
+				throw c;
+			}
+		}
+		 function work() {
+			let txtA = document.getElementById("inA");
+			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть
+
+			let txtB = document.getElementById("inB");
+			let b = parseFloat(txtB.value);
+
+			let txt1= document.getElementById("out");
+			let result1;
+
+			
+			try{
+				result1=calc(a,b);
+				txt1.innerHTML=result1;
+			}catch(err){
+				txt1.innerHTML=err.message;
+			}
+
+
+			/*let result;
+			if (a < 0 || a === 0) {
+				tag.innerHTML = "Длина основания треугольника должна быть положительна";
+				return;
+			}
+
+			if (b < 0 || b === 0) {
+				tag.innerHTML = "Высота треугольника должна быть положительна";
+				return;
+			}*/
+			
+			/*let tag;
+			tag = document.getElementById("out")
+			tag.innerHTML = result.toFixed(2);//округляет до 2 знаков*/
+			
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
