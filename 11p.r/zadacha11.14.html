@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" />
+	<input id="inA1" />
+	<input type="button" onclick="work()" value="работай" />
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagA = document.getElementById("inA");
+		let tagA1 = document.getElementById("inA1");
+
+
+		function work() {
+			let a = tagA.value;
+			let a1 = tagA1.value;
+			if (a == "") {
+				divOut.innerHTML = "Исходная строка пуста";
+				return;
+			}
+
+			let arr = a.split(" ");
+			let arr1 = a1.split(" ");
+			let result = "";
+
+
+			if (arr[0] !== arr1[0]) {
+				result += arr[0]+" ";
+			}
+
+			if (arr[1] !== arr1[1]) {
+				result += arr[1]+" ";
+			}
+
+			if (arr[2] !== arr1[2]) {
+				result += arr[2]+" ";
+			}
+
+			if (arr[3] !== arr1[3]) {
+				result += arr[3]+" ";
+			}
+
+
+			/*let result = arr + "<br>";
+			result += arr1 + "<br>";*/
+
+			divOut.innerHTML = result;
+
+			/*let arr = a.split(" ");//символ пробела обозначает как будут разделены элементы из a
+			if (0 <= a1 && a1 <= arr.length) {
+				let result = "В массиве длиной" + arr.length + "<br>";
+				result += "на индексе " + a1 + "<br>";
+				result += "находится элемент со значением " + arr[a1];
+				divOut.innerHTML = result;
+			} else {
+				divOut.innerHTML = "Число A должно быть в интервале [0, размер массива)";
+			}*/
+		}
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
