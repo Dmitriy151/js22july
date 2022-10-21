@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="out" style="font-family: monospace; white-space: pre;">
+	</div>
+
+
+	<input id="inA" />
+	<input id="inA1" />
+	<input type="button" onclick="work()" value="работай" />
+
+	<script>
+		let divOut = document.getElementById("out");
+		let tagA = document.getElementById("inA");
+		let tagA1 = document.getElementById("inA1");
+
+
+		function work() {
+			let a = tagA.value;
+			let a1 = tagA1.value;
+			if (a == "") {
+				divOut.innerHTML = "Исходная строка пуста";
+				return;
+			}
+			
+
+			let arr = a.split(" ");
+			let arr1 = a1.split(" ");
+			let result = "";
+            
+			for(let i = 0; i < arr.length; i++){
+
+			if((arr1.indexOf(arr[i]))==-1){
+			console.log((arr1.indexOf(arr[i]))+"элемент отствует")
+			result += arr[i]+" ";
+		    }else{
+			console.log("элемент присутствует")}
+			}
+
+			
+			divOut.innerHTML = result;
+
+			/*let arr = a.split(" ");//символ пробела обозначает как будут разделены элементы из a
+			if (0 <= a1 && a1 <= arr.length) {
+				let result = "В массиве длиной" + arr.length + "<br>";
+				result += "на индексе " + a1 + "<br>";
+				result += "находится элемент со значением " + arr[a1];
+				divOut.innerHTML = result;
+			} else {
+				divOut.innerHTML = "Число A должно быть в интервале [0, размер массива)";
+			}*/
+		}
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
