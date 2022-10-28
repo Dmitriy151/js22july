@@ -20,23 +20,27 @@
 	<!--<input id="inA" oninput="work()">-->
 
 	<script>
+
+		console.log("step1");
 		//реализация фунции calc
 		function calc(a) {
+			console.log("step2");
 			let result;
 			result = a * 5 / 18;
 			//return остановил и вернул результат
 			return result;
 		}
 		//конец реализации
+		console.log("step3");
 
 		function work() {
 			let txt1 = document.getElementById("out1")
 			let result1;
-
+			console.log("step4");
 			//вызов функции calc
 			result1 = calc(60)
 			txt1.innerHTML = "60,00 км/ч это" + result1 + "м/с";
-
+			console.log("step5");
 
 			let txt2 = document.getElementById("out2")
 			let result2;
@@ -59,6 +63,7 @@
 			result4 = calc(0)
 			txt4.innerHTML = "0,00 км/ч это" + result4 + "м/с";
 		}
+		console.log("step6");
 		/*let tag; function work() {
 			let txtA = document.getElementById("inA");
 			let a = parseFloat(txtA.value);//берет число из текста, если оно там есть

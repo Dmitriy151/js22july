@@ -10,31 +10,39 @@ for (let i = 4; i <= 400; i++) {
 tag.innerHTML = result;
 console.log(result);
 alert('hello')*/
-let divOut1 = document.getElementById("out1");
-let divOut2 = document.getElementById("out2");
+let divUnsub = document.getElementById("unsub");
+let divSub = document.getElementById("sub");
+let divUsers = document.getElementById("users");
+let divLost = document.getElementById("lost");
+
 let tagA = document.getElementById("inA");
 let tagB = document.getElementById("inB");
 
-let a = tagA.value;
-let b = tagB.value;
+let list=[];
 
-let list = b.split(" ");
+
+
 
 let result1 = "";
 let result2 = "";
 
 
 function work1() {
-   divOut1.innerHTML = "Отписался";
-   return;
+   let a = tagA.value;
+   divLost.innerHTML =a+" Отписался";
+   if(list.indexOf(a) !== -1){
+      list.splice(list.indexOf(a) == a,1);
+      console.log(list);
+   }
+
+   
 }
 
 function work2() {
-   result2 += b + " Подписан" + "<br>";
+   let b = tagB.value;  
+   result2 += b + " Подписан" + "<br>";   
    list.push(b);
    console.log(list);
-
-
+   divUsers.innerHTML = result2;
 }
 
-divOut2.innerHTML = result2;
