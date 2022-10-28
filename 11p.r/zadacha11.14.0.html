@@ -30,33 +30,26 @@
 				divOut.innerHTML = "Исходная строка пуста";
 				return;
 			}
-			
+
 
 			let arr = a.split(" ");
 			let arr1 = a1.split(" ");
 			let result = "";
-            
-			for(let i = 0; i < arr.length; i++){
 
-			if((arr1.indexOf(arr[i]))==-1){
-			console.log((arr1.indexOf(arr[i]))+"элемент отствует")
-			result += arr[i]+" ";
-		    }else{
-			console.log("элемент присутствует")}
+			for (let i = 0; i < arr.length; i++) {
+
+				if ((arr1.indexOf(arr[i])) == -1) {
+					console.log((arr1.indexOf(arr[i])) + " элемент отсутвует")
+					result += arr[i] + " ";
+				} else {
+					console.log(" элемент присутствует")
+				}
 			}
 
-			
+
 			divOut.innerHTML = result;
 
-			/*let arr = a.split(" ");//символ пробела обозначает как будут разделены элементы из a
-			if (0 <= a1 && a1 <= arr.length) {
-				let result = "В массиве длиной" + arr.length + "<br>";
-				result += "на индексе " + a1 + "<br>";
-				result += "находится элемент со значением " + arr[a1];
-				divOut.innerHTML = result;
-			} else {
-				divOut.innerHTML = "Число A должно быть в интервале [0, размер массива)";
-			}*/
+
 		}
 
 
