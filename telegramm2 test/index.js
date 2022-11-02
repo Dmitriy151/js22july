@@ -29,13 +29,19 @@ let result2 = "";
 
 function work1() {
    let a = tagA.value;
-   let index = list.indexOf(a);
+   let index = list.indexOf(a)
    divLost.innerHTML = a + " Отписался";
-   if (index !== -1) {
-      //list.splice(index == a, 1);
-      list.splice(index, 1);
-      console.log(index);
+   if ((list[index]) == a) {
+
+      list.splice([index], 1);
+
       console.log(list);
+      console.log(index);
+      console.log[index];
+
+      //list.splice(3, 1);
+
+
    }
 
 
