@@ -33,7 +33,7 @@ function work1() {
    divLost.innerHTML = a + " Отписался";
    if ((list[index]) == a) {
 
-      list.splice([index], 1);
+      list.splice(index, 1);
 
       console.log(list);
       console.log(index);
