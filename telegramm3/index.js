@@ -66,14 +66,15 @@ function work3() {
 
       if ((newList.indexOf(list[i])) == -1) {
          console.log((newList.indexOf(list[i])) + " элемент отсутсвует");
-         result3 += list[i] + " ";
+         result3 += list[i]+' ';
+         lostList.push(list[i]);
 
       } else {
          console.log(" массивы равны");
          //console.log(newList);
       }
    }
-   lostList = result3.split(" ");
+   
    //lostList.push(result3);
    //lostList.split(" ");
    divLost.innerHTML = result3 + " в newList отсутствует";
