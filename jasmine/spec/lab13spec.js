@@ -40,3 +40,69 @@ describe("lab13",function() {
     });
 
 });
+
+describe("lab15",function() {
+    it("distanceBetweenInts",function(){
+        let actual=distanceBetweenInts(1,1,3,4);
+        expect(actual).toBeCloseTo(3.6056);
+        //actual=task1860("цели");
+        //expect(actual).toEqual("Мы стремимся к цели");
+        //actual=task1860("результату");
+        //expect(actual).toEqual("Мы стремимся к результату");
+
+    });
+
+});
+
+/*describe("lab15",function() {
+    it("distanceBetweenObjects1",function(){
+        let actual=distanceBetweenObjects(1,1,3,4);
+        expect(actual).toBeCloseTo(3.6056);
+        //actual=task1860("цели");
+        //expect(actual).toEqual("Мы стремимся к цели");
+        //actual=task1860("результату");
+        //expect(actual).toEqual("Мы стремимся к результату");
+
+    });
+
+});*/
+
+
+describe("lab15",function() {
+    it("distanceBetweenObjects2",function(){
+        let a={x:1,y:1};
+        let b={x:3,y:4};
+
+        let actual=distanceBetweenObjects(a,b);
+        expect(actual).toBeCloseTo(3.6056);
+        //actual=task1860("цели");
+        //expect(actual).toEqual("Мы стремимся к цели");
+        //actual=task1860("результату");
+        //expect(actual).toEqual("Мы стремимся к результату");
+
+    });
+
+    
+        it("distanceBetweenInts",function(){
+            let actual= hasIntersectionInts(2,3,5,7);
+            expect(actual).toEqual("Интервалы не пересекаются. Правый край красного левее левого края зеленого.");
+            //actual=task1860("цели");
+            //expect(actual).toEqual("Мы стремимся к цели");
+            //actual=task1860("результату");
+            //expect(actual).toEqual("Мы стремимся к результату");
+    
+        });
+    
+    
+
+    
+        it("hasIntersectionObjects",function(){
+            let red={x:2,y:3};
+            let green={x:5,y:7};
+    
+            let actual=hasIntersectionObjects(red,green);
+            expect(actual).toEqual("Интервалы не пересекаются. Правый край красного левее левого края зеленого.");
+            
+    
+        });
+});
