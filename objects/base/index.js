@@ -31,7 +31,7 @@ console.log(value);
 value = user['user-adres']['city'];
 console.log(value);
 
-//при использовании квадратных скобок можно подставлять внуть переменные
+//при использовании квадратных скобок можно подставлять внутрь переменные
 
 let prop = 'skills';
 value = user[prop];

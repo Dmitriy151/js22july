@@ -1,6 +1,6 @@
 /*Реализуйте функцию для решения задачи ЛР1#1860(открыть в новой вкладке)*/
-function task1860(a){
-    return "Мы стремимся к "+a;
+function task1860(a) {
+    return "Мы стремимся к " + a;
 }
 /*В файле для исходного кода реализуйте функцию task1860.
 В качестве аргументов ей будут передавать 1 строку.
@@ -16,11 +16,11 @@ function task1860(a){
 Мы стремимся к цели
 Мы стремимся к результату*/
 
-function task4411(a){
+function task4411(a) {
     return a + 7;
 }
 
-function distanceBetweenInts(ax,ay,bx,by){
+function distanceBetweenInts(ax, ay, bx, by) {
     return Math.sqrt(Math.pow((bx - ax), 2) + Math.pow((by - ay), 2));
 }
 
@@ -28,48 +28,52 @@ function distanceBetweenInts(ax,ay,bx,by){
     return Math.sqrt(Math.pow((bx - ax), 2) + Math.pow((by - ay), 2));
 }*/
 
-function distanceBetweenObjects(a,b){
+function distanceBetweenObjects(a, b) {
     return Math.sqrt(Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2));
 }
 
-function hasIntersectionInts(redA,redB,greenA,greenB){
-    if (redA>redB||greenA>greenB){
-        let e=Error("Некорректный интервал. Левая граница должна быть меньше правой.")
-				throw e; 
+function hasIntersectionInts(redA, redB, greenA, greenB) {
+    if (redA > redB || greenA > greenB) {
+        let e = Error("Некорректный интервал. Левая граница должна быть меньше правой.")
+        throw e;
     }
 
-    if(redB<=greenA){
+    if (redB <= greenA) {
         return "Интервалы не пересекаются. Правый край красного левее левого края зеленого."
     }
 
-    else if(greenB<=redA){
+    else if (greenB <= redA) {
         return "Интервалы не пересекаются. Правый край зеленого левее левого края красного."
     }
 
-    else{
+    else {
         return "Интервалы пересекаются."
     }
 
 
 }
 
-function hasIntersectionObjects(red,green){
-    if (red.x>red.y||green["x"]>green.y){
-        let e=Error("Некорректный интервал. Левая граница должна быть меньше правой.")
-				throw e; 
+function hasIntersectionObjects(red, green) {
+    if (red.x > red.y || green["x"] > green.y) {
+        let e = Error("Некорректный интервал. Левая граница должна быть меньше правой.")
+        throw e;
     }
 
-    if(red.y<=green.x){
+    if (red.y <= green.x) {
         return "Интервалы не пересекаются. Правый край красного левее левого края зеленого."
     }
 
-    else if(green.y<=red.x){
+    else if (green.y <= red.x) {
         return "Интервалы не пересекаются. Правый край зеленого левее левого края красного."
     }
 
-    else{
+    else {
         return "Интервалы пересекаются."
     }
 
 
+}
+
+function distanceTo(a, b) {
+    return Math.sqrt(Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2));
 }
