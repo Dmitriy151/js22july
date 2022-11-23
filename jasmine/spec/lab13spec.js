@@ -113,13 +113,70 @@ describe("lab15", function () {
         let a = {
             x: 1,
             y: 1,
-            distanceTo: function () { }
+            distanceTo: function (px,py) {
+                return Math.sqrt(Math.pow((this.x - px), 2) + Math.pow((this.y - py), 2));
+             }
+            
         };
         let b = { x: 3, y: 4 };
 
-        let actual = distanceBetweenObjects(a, b);
+        let actual = a.distanceTo(3, 4);
         expect(actual).toBeCloseTo(3.6056);
 
     });
 
 });
+
+//function closures
+
+describe("closures", function () {
+    it("example", function () {
+        function parent(){
+            let a =1;
+            let sum=function(b){
+                return  a+b;
+            }  
+            return sum;
+        }
+        let sub=function(b,c){return b-c;}
+        let actualt = sub(10, 3);
+        expect(actualt).toBeCloseTo(7);
+
+        f=parent();
+        let actual = f(5);
+        expect(actual).toBeCloseTo(6);
+
+
+    });
+
+    //arrow functions
+    it ("arrow functions" ,function(){
+    let points=[
+        {x:1,y:1},
+        {x:3,y:4},
+        {x:-5,y:6},
+    ]
+
+    //вариант 1
+    let i=0;
+    while (i<points.length){
+        points[i.x] +=10;
+        i++;
+    }
+
+    //вариант 2
+    function move100 (p) {
+        p.x +=100;
+
+    }
+   points.forEach(move100);
+
+   //вариант 3
+   points.forEach((p)=>p.x +=1000);
+    });
+
+});
+
+
+
+
